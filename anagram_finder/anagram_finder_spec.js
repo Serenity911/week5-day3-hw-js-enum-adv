@@ -27,12 +27,12 @@ describe('AnagramFinder', function () {
     assert.deepStrictEqual(anagramFinder.findAnagrams(['DiscOUnteD']), ['DiscOUnteD']);
   });
 
-  it('should not detect a word as it\'s own anagram', function () {
+  xit('should not detect a word as it\'s own anagram', function () {
     const anagramFinder = new AnagramFinder('javascript');
     assert.deepStrictEqual(anagramFinder.findAnagrams(['javascript']), []);
   });
 
-  it('should not detect an empty string as an anagram', function () {
+  xit('should not detect an empty string as an anagram', function () {
     const anagramFinder = new AnagramFinder('word');
     assert.deepStrictEqual(anagramFinder.findAnagrams(['']), []);
   });
